@@ -1,6 +1,6 @@
 Game Systems
 ************
-**Most of these Classes have cdefed functions that cannot be read by 
+**Most of these Classes have cdefed functions that cannot be read by
 Sphinx. Read the source if you want to find out more about using them.**
 
 
@@ -30,12 +30,12 @@ Aggregators
 ===========
 
 The Aggregator classes make it easier to write the logic for a GameSystem's
-update loop. Rather than having to fetch the components yourself from each 
-GameSystem MemoryBlock, you can instead expend a little more memory and 
+update loop. Rather than having to fetch the components yourself from each
+GameSystem MemoryBlock, you can instead expend a little more memory and
 store an array of pointers to the appropriate components for your processing.
 
-This expends a little more memory, and adds a layer of indirection but 
-makes it significantly easier to write the update loop in cython. 
+This expends a little more memory, and adds a layer of indirection but
+makes it significantly easier to write the update loop in cython.
 
 .. autoclass:: kivent_core.systems.staticmemgamesystem.ZonedAggregator
     :members:
@@ -82,7 +82,7 @@ Color Systems
 Rendering Systems
 =================
 
-.. autoclass:: kivent_core.systems.renderers.RenderComponent   
+.. autoclass:: kivent_core.systems.renderers.RenderComponent
     :members:
 
 .. autoclass:: kivent_core.systems.renderers.Renderer
